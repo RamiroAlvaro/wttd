@@ -1,6 +1,16 @@
 language: python
 python:
   - "3.7"
+services: postgresql
+addons:
+  postgresql: '9.6'
+before_script:
+- psql -c "CREATE DATABASE travisci;" -U postgres
+- python manage.py migrate --noinput
+- python manage.py collectstatic --noinput --no-post-process
+env:
+  global:
+    - DATABASE_URL=postgres://postgres@localhost/travisci
 install:
   - cp contrib/env-sample .env
   - pip install -q -r requirements.txt
