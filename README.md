@@ -2,6 +2,8 @@
 
 Sistema de Eventos encomendados pela Morena.
 
+[![Build Status](https://travis-ci.org/RamiroAlvaro/wttd.svg?branch=master)](https://travis-ci.org/RamiroAlvaro/wttd)
+
 ## Como desenvolver?
 
 1. Clone o repositório.
