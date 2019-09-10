@@ -9,7 +9,7 @@ def copy_src_to_dst(Source, Destination):
             title=src.title,
             start=src.start,
             description=src.description,
-            slots=src.slots
+            slot=src.slot
         )
         dst.save()
         dst.speakers.set(src.speakers.all())
