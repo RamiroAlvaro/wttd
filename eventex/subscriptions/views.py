@@ -1,5 +1,3 @@
-from django.core import mail
-from django.template.loader import render_to_string
 from django.views.generic import DetailView
 
 from eventex.subscriptions.forms import SubscriptionForm
